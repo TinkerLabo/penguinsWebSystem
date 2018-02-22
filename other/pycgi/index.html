@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>ゲストブックv02</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>
+      <span class="glyphicon glyphicon-book"></span> ゲストブック </h1>
+    <br>
+    <div class="panel panel-default">
+
+      <!-- <div class="panel-headding">
+        <div class="panel-title">
+          <p>ようこそ！</p>
+        </div>
+      </div> -->
+      <div class="panel-body">
+        <form action="cgi-bin/guestbook.py" method="get">
+          <dl>
+            <dt><p>なまえ</p></dt>
+            <dd>
+              <input name="name" size="30" type="text">
+            </dd>
+          </dl>
+          <dl>
+            <dt><p>メッセージ</p></dt>
+            <dd>
+              <textarea rows="5" cols="80" name="message"></textarea>
+            </dd>
+          </dl>
+          <p>
+            <input value="とうろく" type="submit">
+            <input value="リセット" type="reset"> </p>
+        </form>
+        <center>
+        <a href="./cgi-bin/guestbook.py">お友達のページへ</a>
+        </center>
+        </div>
+      <!-- <div class="panel-footer">
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.12.1.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    // jQuery
+
+
+  </script>
+</body>
+
+</html>
